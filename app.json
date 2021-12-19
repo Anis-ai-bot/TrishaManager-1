@@ -45,7 +45,7 @@
       },    
       "SQLALCHEMY_DATABASE_URI": {
          "description": "Put Your elephant postgres sql db Get From https://api.elephantsql.com/ Here",
-         "required": false,
+         "required": true,
          "value": ""
       },      
       "OWNER_ID": {
