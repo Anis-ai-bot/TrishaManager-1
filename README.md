@@ -9,7 +9,7 @@
 </p>
 <p align="center"><a href="https://t.me/Fun_Games_Chat_Official"><img align="center" src="https://img.shields.io/badge/Join-Official%20Channel-blue.svg?style=for-the-badge&logo=Telegram">
 </p>
-<p align="center"><a href="https://t.me/JaiHindChatting"><img src="https://telegra.ph/file/06bab8d2aca8660c3b487.jpg" width="300"></a></p>
+<p align="center"><a href="https://t.me/JaiHindChatting"><img src="https://telegra.ph/file/1d44c004e0b618a9d00cf.jpg" width="300"></a></p>
 
 
 ### 𝗔𝘃𝗮𝗶𝗹𝗮𝗯𝗹𝗲 𝗢𝗻 𝗧𝗲𝗹𝗲𝗚𝗿𝗮𝗺 
