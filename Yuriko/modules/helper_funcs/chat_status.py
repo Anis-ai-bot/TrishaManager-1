@@ -114,8 +114,8 @@ def dev_plus(func):
                 pass
         else:
             update.effective_message.reply_text(
-                "This is a developer restricted command."
-                " You do not have permissions to run this.",
+                "Ye command kewal apne developer bhaiya ke liye hai."
+                " Tera liye nahi.",
             )
 
     return is_dev_plus_func
@@ -139,7 +139,7 @@ def sudo_plus(func):
                 pass
         else:
             update.effective_message.reply_text(
-                "Bhai,Bhen jo bhi ho apke pass ye right na ha sorry aur so sameless you are saste admin  🙂 dil se bura laga support @JaiHindChatting",
+                "Bhai,Bhen jo bhi ho apke pass ye right na ha sorry aur so sameless you are saste admin  🙂 dil se bura laga support @Fun_Games_Chat",
             )
 
     return is_sudo_plus_func
@@ -178,7 +178,7 @@ def whitelist_plus(func):
         if user and is_whitelist_plus(chat, user.id):
             return func(update, context, *args, **kwargs)
         update.effective_message.reply_text(
-            f"Tera pass ye sab dekhne ka access na ha sed.\nVisit @{SUPPORT_CHAT}",
+            f"Tera pass ye sab dekhne ka access na ha sed lyf.\nVisit @{SUPPORT_CHAT}",
         )
 
     return is_whitelist_plus_func
@@ -202,7 +202,7 @@ def user_admin(func):
                 pass
         else:
             update.effective_message.reply_text(
-                "Bhai,Bhen jo bhi ho apke pass ye right na ha sorry aur so sameless you are saste admin  🙂 dil se bura laga support @JaiHindChatting",
+                "Bhai,Bhen jo bhi ho apke pass ye right na ha sorry aur so sameless you are saste admin  🙂 dil se bura laga support @Fun_Games_Chat",
             )
 
     return is_admin
@@ -277,9 +277,9 @@ def bot_can_delete(func):
         message_chat_title = update.effective_message.chat.title
 
         if update_chat_title == message_chat_title:
-            cant_delete = "I can't delete messages here!\nMake sure I'm admin and can delete other user's messages."
+            cant_delete = "Bro/sis delete message ka permission to do yaar."
         else:
-            cant_delete = f"I can't delete messages in <b>{update_chat_title}</b>!\nMake sure I'm admin and can delete other user's messages there."
+            cant_delete = f"I can't delete messages in <b>{update_chat_title}</b>!\nBro/sis delete message ka permission to do yaar."
 
         if can_delete(chat, bot.id):
             return func(update, context, *args, **kwargs)
@@ -298,7 +298,7 @@ def can_pin(func):
 
         if update_chat_title == message_chat_title:
             cant_pin = (
-                "Ma pin na kar skta sed!\nMake sure Aur Admin bhi nahi diya 😔."
+                "Ma pin noi kar skti sed!\nMake sure Aur Admin bhi nahi diya 😔."
             )
         else:
             cant_pin = f"I can't pin messages in <b>{update_chat_title}</b>!\nMake sure I'm admin and can pin messages there."
@@ -319,7 +319,7 @@ def can_promote(func):
         message_chat_title = update.effective_message.chat.title
 
         if update_chat_title == message_chat_title:
-            cant_promote = "Ma kise ko nahi kara skta promote/demote yaha per!\nMake sure Na ma admin hu🥺 na he add Admin permission."
+            cant_promote = "Ma kise ko nahi kara skti promote/demote yaha per!\nMake sure Na ma admin hu🥺 na he add Admin permission."
         else:
             cant_promote = (
                 f"I can't promote/demote people in <b>{update_chat_title}</b>!\n"
@@ -342,7 +342,7 @@ def can_restrict(func):
         message_chat_title = update.effective_message.chat.title
 
         if update_chat_title == message_chat_title:
-            cant_restrict = "Na Ma kise ko restrict kar skta here!\nMake sure Admin na hu na iseliya."
+            cant_restrict = "Na Ma kise ko restrict kar skti here!\nMake sure Admin na hu na iseliya."
         else:
             cant_restrict = f"I can't restrict people in <b>{update_chat_title}</b>!\nMake sure I'm admin there and can restrict users."
 
@@ -368,7 +368,7 @@ def user_can_ban(func):
             and user not in [2023126723, 1087968824]
         ):
             update.effective_message.reply_text(
-                "Sorry son, but you're not worthy to wield the banhammer👉😏.",
+                "Sorry bete, but you're not worthy to wield the banhammer👉😏.",
             )
             return ""
         return func(update, context, *args, **kwargs)
