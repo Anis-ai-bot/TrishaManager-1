@@ -90,7 +90,7 @@ PM_START_TEXT = """
 × *𝐔𝐩𝐓𝐢𝐦𝐞:* `{}`
 × `{}` *𝐔𝐬𝐞𝐫, 𝐀𝐜𝐫𝐨𝐬𝐬* `{}` *𝐂𝐡𝐚𝐭𝐬.*
 ────────────────────────
-✗ *𝐏𝐨𝐰𝐞𝐫𝐞𝐝 💕 𝐁𝐲: 𝗗𝗲𝘃𝗶𝗟 𝗛𝗮𝗰𝗸𝗲𝗥 @JaiHindChatting !*
+✗ *𝐏𝐨𝐰𝐞𝐫𝐞𝐝 💕 𝐁𝐲: Love Birds @Fun_Games_Chat !*
 """
 
 buttons = [
@@ -101,7 +101,7 @@ buttons = [
     [
         InlineKeyboardButton(text="𝐌𝐮𝐬𝐢𝐜", callback_data="yurikorobot_asst"),
         InlineKeyboardButton(
-            text="𝐒𝐮𝐩𝐩𝐨𝐫𝐭", url=f"https://t.me/JaiHindChatting"
+            text="𝐒𝐮𝐩𝐩𝐨𝐫𝐭", url=f"https://t.me/Fun_games_Chat"
         ),
     ],
     [
@@ -111,7 +111,7 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="𝐀𝐝𝐝 𝐓𝐫𝐢𝐬𝐡𝐚 𝐈𝐧 𝐆𝐫𝐨𝐮𝐩", url="http://t.me/DevilTrishaRoBot?startgroup=true"),
+        InlineKeyboardButton(text="𝐀𝐝𝐝 Kiara 𝐈𝐧 𝐆𝐫𝐨𝐮𝐩", url="http://t.me/kiara_advaniBot?startgroup=true"),
     ],
 ]
 
@@ -248,7 +248,7 @@ def start(update: Update, context: CallbackContext):
             ),
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="𝐒𝐨𝐮𝐫𝐜𝐞 𝐀𝐧𝐝 𝐒𝐮𝐩𝐩𝐨𝐫𝐭", url="t.me/JaiHindChatting")]]
+                [[InlineKeyboardButton(text="𝐒𝐨𝐮𝐫𝐜𝐞 𝐀𝐧𝐝 𝐒𝐮𝐩𝐩𝐨𝐫𝐭", url="t.me/Fun_Games_Chat")]]
             ),
         )
         
@@ -380,7 +380,7 @@ def yurikorobot_about_callback(update, context):
     query = update.callback_query
     if query.data == "yurikorobot_":
         query.message.edit_text(
-            text=""" *𝐓𝐫𝐢𝐬𝐡𝐚* - `A bot to manage your groups with additional features!`
+            text=""" *Kiara* - `A bot to manage your groups with additional features!`
             \n`Here the basic help regarding use of 𝐓𝐫𝐢𝐬𝐡𝐚𝐑𝐨𝐛𝐨𝐭.`
             
             \n`Almost all modules usage defined in the help menu, checkout by sending` `/help`
@@ -391,10 +391,10 @@ def yurikorobot_about_callback(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="𝐁𝐮𝐠'𝐬", url="t.me/JaiHindChatting"
+                            text="𝐁𝐮𝐠'𝐬", url="t.me/Fun_Games_Chat"
                         ),
                         InlineKeyboardButton(
-                            text="𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url="https://t.me/RymOfficial"
+                            text="𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url="https://t.me/Fun_Games_Chat_Channel"
                         ),
                     ],
                     [InlineKeyboardButton(text="Back", callback_data="yurikorobot_back")],
@@ -447,7 +447,7 @@ def yurikorobot_about_callback(update, context):
         query.message.edit_text(
             text=f"*Let's Make Your Group Bit Effective Now*"
             
-            f"\n✗ `Congragulations, 𝐓𝐫𝐢𝐬𝐡𝐚𝐑𝐨𝐛𝐨𝐭 now ready to manage your group.`"
+            f"\n✗ `Congragulations, Kiara now ready to manage your group.`"
             f"\n\n*Admin Tools*"
             f"\n✗ `Basic Admin tools help you to protect and powerup your group.`"
             f"\n✗ `You can ban members, Kick members, Promote someone as admin through commands of bot.`"
@@ -482,8 +482,8 @@ def yurikorobot_about_callback(update, context):
             f"\n\n✗ `2.) then promote me as admin and give all permissions except anonymous admin.`"
             f"\n\n✗ `3.) Assistant Auto Join to your group:`"
             f"\n\n✗ `4.) turn on the video chat first before start to play music.`"
-            f"\n\n✗ *Lets Enjoy The 𝐓𝐫𝐢𝐬𝐡𝐚 𝐌𝐮𝐬𝐢𝐜 And Join Support Group @JaiHindChatting*"
-            f"\n\n*✗ 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 💕 𝐁𝐲: 𝗗𝗲𝘃𝗶𝗟 𝗛𝗮𝗰𝗸𝗲𝗥*",
+            f"\n\n✗ *Lets Enjoy The 𝐓𝐫𝐢𝐬𝐡𝐚 𝐌𝐮𝐬𝐢𝐜 And Join Support Group @Fun_Games_Chat*"
+            f"\n\n*✗ 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 💕 𝐁𝐲: Love Birds*",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -516,11 +516,11 @@ def yurikorobot_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="𝐒𝐨𝐮𝐫𝐜𝐞 𝐀𝐧𝐝 𝐒𝐮𝐩𝐩𝐨𝐫𝐭", url="t.me/JaiHindChatting"),
+                    InlineKeyboardButton(text="𝐒𝐨𝐮𝐫𝐜𝐞 𝐀𝐧𝐝 𝐒𝐮𝐩𝐩𝐨𝐫𝐭", url="t.me/Fun_Games_Chat"),
                  ],
                  [
                     InlineKeyboardButton(text="𝐋𝐨𝐠𝐬", url="t.me/THEDRAGONV6"),
-                    InlineKeyboardButton(text="𝐔𝐩𝐝𝐚𝐭𝐞𝐬", url="https://t.me/RymOfficial"),
+                    InlineKeyboardButton(text="𝐔𝐩𝐝𝐚𝐭𝐞𝐬", url="https://t.me/Fun_Games_Chat_Official"),
                  ],
                  [
                     InlineKeyboardButton(text="Back", callback_data="yurikorobot_basichelp"),
@@ -531,9 +531,9 @@ def yurikorobot_about_callback(update, context):
         )
     elif query.data == "yurikorobot_credit":
         query.message.edit_text(
-            text=f"<b> CREDIT FOR 𝐓𝐑𝐈𝐒𝐇𝐀 DEV'S</b>\n"
+            text=f"<b> CREDIT FOR Kiara DEV'S</b>\n"
             
-            f"\n`✗ Here Some Developers Helping in Making The 𝐓𝐫𝐢𝐬𝐡𝐚 Bot`",
+            f"\n`✗ Here Some Developers Helping in Making The Kiara Bot`",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
