@@ -5,15 +5,15 @@
 <p align="center">
     𝗦𝗨𝗣𝗣𝗢𝗥𝗧 𝗔𝗡𝗗 𝗨𝗣𝗗𝗔𝗧𝗘𝗦🎑
 
-<p align="center"><a href="https://t.me/JaiHindChatting"><img align="center" src="https://img.shields.io/badge/Join-Group%20Support-blue.svg?style=for-the-badge&logo=Telegram">
+<p align="center"><a href="https://t.me/Fun_Games_Chat"><img align="center" src="https://img.shields.io/badge/Join-Group%20Support-blue.svg?style=for-the-badge&logo=Telegram">
 </p>
-<p align="center"><a href="https://t.me/RYMOFFICIAL"><img align="center" src="https://img.shields.io/badge/Join-Official%20Channel-blue.svg?style=for-the-badge&logo=Telegram">
+<p align="center"><a href="https://t.me/Fun_Games_Chat_Official"><img align="center" src="https://img.shields.io/badge/Join-Official%20Channel-blue.svg?style=for-the-badge&logo=Telegram">
 </p>
 <p align="center"><a href="https://t.me/JaiHindChatting"><img src="https://telegra.ph/file/06bab8d2aca8660c3b487.jpg" width="300"></a></p>
 
 
 ### 𝗔𝘃𝗮𝗶𝗹𝗮𝗯𝗹𝗲 𝗢𝗻 𝗧𝗲𝗹𝗲𝗚𝗿𝗮𝗺 
-- [🛡️𝐃𝐞𝐯𝐢𝐥𝐓𝐫𝐢𝐬𝐡𝐚🛡️](https://t.me/DevilTrishaRoBot) BOT
+- [🛡️Kiara🛡️](https://t.me/kiara_advaniBot) BOT
 
 
 <p align="center">
