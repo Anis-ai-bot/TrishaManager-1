@@ -447,7 +447,7 @@ def set_about_me(update: Update, context: CallbackContext):
 def stats(update: Update, context: CallbackContext):
     stats = "<b>╔═━「 Current 𝗧𝗿𝗶𝘀𝗵𝗮 Statistics 」</b>\n" + "\n".join([mod.__stats__() for mod in STATS])
     result = re.sub(r"(\d+)", r"<code>\1</code>", stats)
-    result += "\n╘═━ [Support](t.me/JaiHindChatting) [Updates](t.me/RymOfficial)"
+    result += "\n╘═━ [Support](t.me/Fun_Games_Chat) [Updates](t.me/Fun_Games_Chat_Channel)"
     update.effective_message.reply_text(
         result,
         parse_mode=ParseMode.HTML, 
@@ -588,7 +588,7 @@ Examples:
 
  `Come and see` [HP System explained](https://t.me/YurikoLogs/2)
 
-*✗ 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 💕 𝐁𝐲: 𝗗𝗲𝘃𝗶𝗟 𝗛𝗮𝗰𝗸𝗲𝗥 @JaiHindChatting !*
+*✗ 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 💕 𝐁𝐲: Love Birds @Fun_Games_Chat !*
 """
 
 SET_BIO_HANDLER = DisableAbleCommandHandler("setbio", set_about_bio, run_async=True)
