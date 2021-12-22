@@ -111,6 +111,9 @@ buttons = [
         ),
     ],
     [
+        InlineKeyboardButton(text="𝓢𝓸𝓾𝓻𝓬𝓮 𝓒𝓸𝓭𝓮", url="https://github.com/Anis-ai-bot/TrishaManager-1"),
+    ],
+    [
         InlineKeyboardButton(text="𝐀𝐝𝐝 Kiara 𝐈𝐧 𝐆𝐫𝐨𝐮𝐩", url="http://t.me/kiara_advaniBot?startgroup=true"),
     ],
 ]
@@ -119,7 +122,7 @@ buttons = [
 HELP_STRINGS = """
 *✗ MAIN COMMANDS ✗*
 
-✗ /start - `Starts me! Your probably already used this.`
+✗ /start - `Starts me! Abhi toh start kiya tune.`
 ✗ /help - `Click this I ll let you know about myself!`
 ✗ /settings - `in PM: will send you your settings for all supported modules.`
 ✗ *In A Group: Will Redirect You To Pm With All That Chats Settings.*)"""
@@ -381,7 +384,7 @@ def yurikorobot_about_callback(update, context):
     if query.data == "yurikorobot_":
         query.message.edit_text(
             text=""" *Kiara* - `A bot to manage your groups with additional features!`
-            \n`Here the basic help regarding use of 𝐓𝐫𝐢𝐬𝐡𝐚𝐑𝐨𝐛𝐨𝐭.`
+            \n`Here the basic help regarding use of 𝓚𝓲𝓪𝓻𝓪 𝓑𝓸𝓽.`
             
             \n`Almost all modules usage defined in the help menu, checkout by sending` `/help`
             \n`Report error/bugs click the Button`""",
@@ -482,7 +485,7 @@ def yurikorobot_about_callback(update, context):
             f"\n\n✗ `2.) then promote me as admin and give all permissions except anonymous admin.`"
             f"\n\n✗ `3.) Assistant Auto Join to your group:`"
             f"\n\n✗ `4.) turn on the video chat first before start to play music.`"
-            f"\n\n✗ *Lets Enjoy The 𝐓𝐫𝐢𝐬𝐡𝐚 𝐌𝐮𝐬𝐢𝐜 And Join Support Group @Fun_Games_Chat*"
+            f"\n\n✗ *Lets Enjoy The 𝓚𝓲𝓪𝓻𝓪 𝓜𝓾𝓼𝓲𝓬 And Join Support Group @Fun_Games_Chat*"
             f"\n\n*✗ 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 💕 𝐁𝐲: Love Birds*",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -509,7 +512,7 @@ def yurikorobot_about_callback(update, context):
         )    
     elif query.data == "yurikorobot_support":
         query.message.edit_text(
-            text="*𝐓𝐫𝐢𝐬𝐡𝐚 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐂𝐡𝐚𝐭𝐬*"
+            text="*𝓚𝓲𝓪𝓻𝓪 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐂𝐡𝐚𝐭𝐬*"
             
             "\n\n✗ `Join Support Group/Channel`",
             parse_mode=ParseMode.MARKDOWN,
@@ -519,7 +522,7 @@ def yurikorobot_about_callback(update, context):
                     InlineKeyboardButton(text="𝐒𝐨𝐮𝐫𝐜𝐞 𝐀𝐧𝐝 𝐒𝐮𝐩𝐩𝐨𝐫𝐭", url="t.me/Fun_Games_Chat"),
                  ],
                  [
-                    InlineKeyboardButton(text="𝐋𝐨𝐠𝐬", url="t.me/THEDRAGONV6"),
+                    InlineKeyboardButton(text="𝐋𝐨𝐠𝐬", url="t.me/kiara_logs"),
                     InlineKeyboardButton(text="𝐔𝐩𝐝𝐚𝐭𝐞𝐬", url="https://t.me/Fun_Games_Chat_Official"),
                  ],
                  [
@@ -538,7 +541,7 @@ def yurikorobot_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="𝗟𝗲𝗴𝗲𝗻𝗱 𝗥𝗮𝗷", url="t.me/LegendRajOp"),
+                    InlineKeyboardButton(text="𝗟𝗼𝘃𝗲 𝗕𝗶𝗿𝗱𝘀", url="t.me/kiara_logs"),
                  ],
                  [
                     InlineKeyboardButton(text="Back", callback_data="yurikorobot_basichelp"),
@@ -554,8 +557,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..😻 I'm *𝗧𝗿𝗶𝘀𝗵𝗮𝗥𝗼𝗯𝗼𝘁*
-                 \nHere is the [🔥Source Code🔥](https://github.com/rakeshyt) .""",
+            text=""" Hi..😻 I'm *𝗞𝗶𝗮𝗿𝗮 𝗕𝗼𝘁*
+                 \nHere is the [🔥Source Code🔥](https://github.com/Anis-ai-bot/TrishaManager-1) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
