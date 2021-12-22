@@ -38,7 +38,7 @@ def set_sticker(update: Update, context: CallbackContext):
     if msg.reply_to_message:
         if not msg.reply_to_message.sticker:
             return msg.reply_text(
-                "You need to reply to some sticker to set chat sticker set!😏"
+                "kisi sticker ke reply me kro yaar, aise thodi na hota hai!😏"
             )
         stkr = msg.reply_to_message.sticker.set_name
         try:
@@ -51,7 +51,7 @@ def set_sticker(update: Update, context: CallbackContext):
                 )
             msg.reply_text(f"Error! {excp.message}.")
     else:
-        msg.reply_text("You need to reply to some sticker to set chat sticker set!😏")
+        msg.reply_text("kisi sticker ke reply me kro yaar, aise thodi na hota hai!😏")
        
     
 @bot_admin
@@ -71,15 +71,15 @@ def setchatpic(update: Update, context: CallbackContext):
         elif msg.reply_to_message.document:
             pic_id = msg.reply_to_message.document.file_id
         else:
-            msg.reply_text("You can only set some photo as chat pic!")
+            msg.reply_text("chat pic me kewal photo laga sakte ho yr!")
             return
-        dlmsg = msg.reply_text("Just a sec...")
+        dlmsg = msg.reply_text("ek sec ruko...")
         tpic = context.bot.get_file(pic_id)
         tpic.download("gpic.png")
         try:
             with open("gpic.png", "rb") as chatp:
                 context.bot.set_chat_photo(int(chat.id), photo=chatp)
-                msg.reply_text("Successfully set new chatpic!")
+                msg.reply_text("ho gaya tera chatpic set!")
         except BadRequest as excp:
             msg.reply_text(f"Error! {excp.message}")
         finally:
@@ -97,7 +97,7 @@ def rmchatpic(update: Update, context: CallbackContext):
     user = update.effective_user
 
     if user_can_changeinfo(chat, user, context.bot.id) is False:
-        msg.reply_text("You don't have enough rights to delete group photo")
+        msg.reply_text("You sasta admin, tere paas group photo delete krne ka ri8 noi hai")
         return
     try:
         context.bot.delete_chat_photo(int(chat.id))
@@ -114,7 +114,7 @@ def set_desc(update: Update, context: CallbackContext):
     user = update.effective_user
 
     if user_can_changeinfo(chat, user, context.bot.id) is False:
-        return msg.reply_text("You're missing rights to change chat info!✋")
+        return msg.reply_text("You sasta admin, tere paas change group info ka ri8 noi hai!✋")
 
     tesc = msg.text.split(None, 1)
     if len(tesc) >= 2:
@@ -123,7 +123,7 @@ def set_desc(update: Update, context: CallbackContext):
         return msg.reply_text("Setting empty description won't do anything!🤔")
     try:
         if len(desc) > 255:
-            return msg.reply_text("Description must needs to be under 255 characters!🙂")
+            return msg.reply_text("Thoda chhota likho yrr, maximum 255 characters hi aa sakte hain!🙂")
         context.bot.set_chat_description(chat.id, desc)
         msg.reply_text(f"Successfully updated chat description in {chat.title}!")
     except BadRequest as excp:
@@ -143,7 +143,7 @@ def setchat_title(update: Update, context: CallbackContext):
 
     title = " ".join(args)
     if not title:
-        msg.reply_text("Kuch text do taki ma set new title in your chat!😴")
+        msg.reply_text("Kuch text do taki main new title set kr saku in your chat!😴")
         return
 
     try:
@@ -176,7 +176,7 @@ def promote(update: Update, context: CallbackContext) -> str:
         not (promoter.can_promote_members or promoter.status == "creator")
         and user.id not in DRAGONS
     ):
-        message.reply_text("Bhai,Bhen jo bhi ho apke pass ye right na ha sorry aur so sameless you are saste admin  🙂 dil se bura laga support @JaiHindChatting")
+        message.reply_text("Bhai,Bhen jo bhi ho apke pass ye right na ha sorry aur so sameless you are saste admin  🙂 dil se bura laga support @Fun_Games_Chat")
         return
 
     user_id = extract_user(message, args)
@@ -193,7 +193,7 @@ def promote(update: Update, context: CallbackContext) -> str:
         return
 
     if user_member.status in ('administrator', 'creator'):
-        message.reply_text("How Maltb ma fhir se usko admin bano wo jabki already admin ha🥺")
+        message.reply_text("Kya matlab hai fhir se usko admin banane ka wo jabki already admin ha🥺")
         return
 
     if user_id == bot.id:
@@ -218,7 +218,7 @@ def promote(update: Update, context: CallbackContext) -> str:
         )
     except BadRequest as err:
         if err.message == "User_not_mutual_contact":
-            message.reply_text("I can't promote🤣 someone who isn't in the group.🙂")
+            message.reply_text("I can't promote🤣 someone jo group me hi nahi hai.🙂")
         else:
             message.reply_text("Bhai kuch occured name se error ha for promoting.😏💫")
         return
@@ -258,7 +258,7 @@ def lowpromote(update: Update, context: CallbackContext) -> str:
         not (promoter.can_promote_members or promoter.status == "creator")
         and user.id not in DRAGONS
     ):
-        message.reply_text("Bhai,Bhen jo bhi ho apke pass ye right na ha sorry 🙂 dil se bura laga support @JaiHindChatting ")
+        message.reply_text("Bhai,Bhen jo bhi ho apke pass ye right na ha sorry 🙂 dil se bura laga support @Fun_games_Chat ")
         return
 
     user_id = extract_user(message, args)
@@ -275,7 +275,7 @@ def lowpromote(update: Update, context: CallbackContext) -> str:
         return
 
     if user_member.status in ('administrator', 'creator'):
-        message.reply_text("How Maltb ma fhir se usko admin bano wo jabki already admin ha🥺")
+        message.reply_text("Kya matlab hai fhir se usko admin banane ka wo jabki already admin ha🥺")
         return
 
     if user_id == bot.id:
@@ -295,7 +295,7 @@ def lowpromote(update: Update, context: CallbackContext) -> str:
         )
     except BadRequest as err:
         if err.message == "User_not_mutual_contact":
-            message.reply_text("I can't promote someone who isn't in the group.💫")
+            message.reply_text("I can't promote someone jo group me hi nahi hai.💫")
         else:
             message.reply_text("An error occured while promoting.")
         return
@@ -352,7 +352,7 @@ def fullpromote(update: Update, context: CallbackContext) -> str:
         return
 
     if user_member.status in ('administrator', 'creator'):
-        message.reply_text("How Maltb ma fhir se usko admin bano wo jabki already admin ha🥺")
+        message.reply_text("Kya matlab hai fhir se usko admin banane ka wo jabki already admin ha🥺")
         return
 
     if user_id == bot.id:
@@ -430,15 +430,15 @@ def demote(update: Update, context: CallbackContext) -> str:
         return
 
     if user_member.status == "creator":
-        message.reply_text("This person CREATED the chat, how would I demote them?")
+        message.reply_text("This person CREATED the chat, me isko kese demote karun🥺?")
         return
 
     if not user_member.status == "administrator":
-        message.reply_text("Can't demote what wasn't promoted!🎉")
+        message.reply_text("Can't demote jise mene promote nahi ki thi!🎉")
         return
 
     if user_id == bot.id:
-        message.reply_text("Agar merko demote kiya to dekha lena 😏 aur me apne apko demote na kar skta sed🥺")
+        message.reply_text("Agar merko demote kiya to dekha lena 😏 aur me apne apko demote na kar skti sed🙂")
         return
 
     try:
@@ -513,7 +513,7 @@ def set_title(update: Update, context: CallbackContext):
 
     if user_member.status == "creator":
         message.reply_text(
-            "This person CREATED the chat, how can i set custom title for him?",
+            "This person CREATED the chat, how can i set custom title for him, pagal?",
         )
         return
 
@@ -525,7 +525,7 @@ def set_title(update: Update, context: CallbackContext):
 
     if user_id == bot.id:
         message.reply_text(
-            "I can't set my own title myself! Get the one who made me admin to do it for me.",
+            "I can't set my own title myself! usko bula jisne mereko admin banaya tha/thi🙂.",
         )
         return
 
@@ -966,7 +966,7 @@ __help__ = """
 
 ✗ /clearrules - `clear the rules for this chat.`
 
-*✗ 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 💕 𝐁𝐲: 𝗗𝗲𝘃𝗶𝗟 𝗛𝗮𝗰𝗸𝗲𝗥 @JaiHindChatting !*
+*✗ 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 💕 𝐁𝐲: Love Birds @Fun_Games_Chat !*
 """
 
 SET_DESC_HANDLER = CommandHandler("setdesc", set_desc, filters=Filters.chat_type.groups, run_async=True)
