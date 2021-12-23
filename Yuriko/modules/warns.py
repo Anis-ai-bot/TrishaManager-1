@@ -509,7 +509,7 @@ __help__ = """
 
 ✗ /strongwarn - `<on/yes/off/no> If set to on, exceeding the warn limit will result in a ban. Else, will just punch.`
 
-*✗ 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 💕 𝐁𝐲: 𝗗𝗲𝘃𝗶𝗟 𝗛𝗮𝗰𝗸𝗲𝗥 @JaiHindChatting !*
+*✗ 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 💕 𝐁𝐲: Love Birds @Fun_Games_Chat !*
 """
 
 __mod_name__ = "Wᴀʀɴɪɴɢ"
