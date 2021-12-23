@@ -593,7 +593,7 @@ eg:
 
 ✗  `Unlocking - `permission` *pin* `will allow members (non-admins) to pinned a message in a group`
 
-*✗ 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 💕 𝐁𝐲: 𝗗𝗲𝘃𝗶𝗟 𝗛𝗮𝗰𝗸𝗲𝗥 @JaiHindChatting !*
+*✗ 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 💕 𝐁𝐲: Love Birds @Fun_Games_Chat !*
 """
 
 __mod_name__ = "Lᴏᴄᴋꜱ"
