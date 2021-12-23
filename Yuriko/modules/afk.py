@@ -69,6 +69,7 @@ def no_longer_afk(update: Update, context: CallbackContext):
                 "{} is back!",
                 "{} is now in the chat!",
                 "{} is awake!",
+                "{} aa gaya yaar, was missing you much.",
                 "{} is back online!",
                 "{} is finally here!",
                 "Welcome back! {}",
