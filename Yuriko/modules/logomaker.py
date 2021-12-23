@@ -44,10 +44,10 @@ def mediainfo(media):
 
 @register(pattern="^/logo ?(.*)")
 async def logo_gen(event):
-    xx = await event.reply("`Bana raha hu roka todi ma bh insaan hu machine nahi😶...`")
+    xx = await event.reply("`Bana rahi hun na, ruko zara sabar karo😶...`")
     name = event.pattern_match.group(1)
     if not name:
-        await xx.edit("`Kuch text dega tab na logo banoga 😏!\nExample: /logo <Chup Chap apne name likha>!`")
+        await xx.edit("`Kuch text doge tab na logo banaungi yrr 😏!\nExample: /logo <apna pyara/bhadda naam likho>!`")
         return
     bg_, font_ = "", ""
     if event.reply_to_msg_id:
@@ -113,7 +113,7 @@ async def logo_gen(event):
         await tbot.send_file(
             event.chat_id,
             file=flnme,
-            caption="Logo by [𝗗𝗲𝘃𝗶𝗟 𝗛𝗮𝗰𝗸𝗲𝗥](https://t.me/JaiHindChatting)",
+            caption="Logo by [𝕷𝖔𝖛𝖊 𝕭𝖎𝖗𝖉𝖘](https://t.me/Fun_Games_Chat)",
             force_document=False,
         )
         os.remove(flnme)
@@ -127,10 +127,10 @@ async def logo_gen(event):
 
 @register(pattern="^/wlogo ?(.*)")
 async def logo_(event):
-    xx = await event.reply("`Bana raha hu roka todi ma bh insaan hu machine nahi😶...`")
+    xx = await event.reply("`Bana rahi hun na, ruko zara sabar karo😶...`")
     name = event.pattern_match.group(1)
     if not name:
-        await xx.edit("`Provide some text to draw!\nExample: /wlogo <your name>!`")
+        await xx.edit("`Kuch text doge tab na logo banaungi yrr!\nExample: /wlogo <apna pyara/bhadda naam likho>!`")
         return
     bg_, font_ = "", ""
     if event.reply_to_msg_id:
@@ -196,7 +196,7 @@ async def logo_(event):
         await tbot.send_file(
             event.chat_id,
             file=flnme,
-            caption="Logo by [𝗗𝗲𝘃𝗶𝗟 𝗛𝗮𝗰𝗸𝗲𝗥](https://t.me/JaiHindChatting)",
+            caption="Logo by [𝕷𝖔𝖛𝖊 𝕭𝖎𝖗𝖉𝖘](https://t.me/Fun_games_Chat)",
             force_document=False,
         )
         os.remove(flnme)
@@ -220,5 +220,5 @@ __help__ = """
 
 ✗  /edit - `<reply photo> to edit image.`
 
-*✗ 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 💕 𝐁𝐲: 𝗗𝗲𝘃𝗶𝗟 𝗛𝗮𝗰𝗸𝗲𝗥 @JaiHindChatting !*
+*✗ 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 💕 𝐁𝐲: Love Birds @Fun_Games_Chat !*
 """
