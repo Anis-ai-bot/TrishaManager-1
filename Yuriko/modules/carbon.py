@@ -30,9 +30,9 @@ MEMEK = "https://telegra.ph/file/ceb116e569f2255fedb6d.jpg"
 async def repo(_, message):
     await message.reply_photo(
         photo=MEMEK,
-        caption=f"""✨ **Hey I'm 𝗧𝗿𝗶𝘀𝗵𝗮 𝗥𝗼𝗯𝗼𝘁** 
+        caption=f"""✨ **Hey I'm 𝗞𝗶𝗮𝗿𝗮 𝗕𝗼𝘁** 
 
-**Owner repo : [𝗟𝗘𝗚𝗘𝗡𝗗 𝗥𝗔𝗝](https://t.me/LEGENDRAJOP)**
+**Owner repo : [𝕷𝖔𝖛𝖊 𝕭𝖎𝖗𝖉](https://t.me/Aww_LoVe_BiRdS)**
 **Python Version :** `{y()}`
 **Library Version :** `{o}`
 **Telethon Version :** `{s}`
@@ -44,9 +44,9 @@ async def repo(_, message):
             [
                 [
                     InlineKeyboardButton(
-                        "Repo", url="https://github.com/rakeshyt/"), 
+                        "Repo", url="https://github.com/Anis-ai-bot/TrishaManager-1"), 
                     InlineKeyboardButton(
-                        "Support", url="https://t.me/JaiHindChatting")
+                        "Support", url="https://t.me/Fun_Games_Chat")
                 ]
             ]
         )
