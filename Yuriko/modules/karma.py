@@ -19,8 +19,8 @@ from Yuriko.ex_plugins.dbfunctions import (
 from Yuriko.utils.filter_groups import karma_negative_group, karma_positive_group
 from Yuriko import arq
 
-regex_upvote = r"^((?i)\+|\+\+|\+1|thx|thanx|thanks|pro|cool|good|👍)$"
-regex_downvote = r"^(\-|\-\-|\-1|👎|noob|weak)$"
+regex_upvote = r"^((?i)\+|\+\+|\+1|thx|thanx|thanks|pro|cool|good|themks|badhiya|👍)$"
+regex_downvote = r"^(\-|\-\-|\-1|👎|noob|weak|badtameez|pagli|badmaas)$"
 
 
 
