@@ -122,14 +122,14 @@ async def alive_function(answers):
     )
 
     msg = f"""
-**[𝗧𝗿𝗶𝘀𝗵𝗮 𝗥𝗼𝗯𝗼𝘁 ❤️](https://t.me/JaiHindChatting):**
+**[𝓚𝓲𝓪𝓻𝓪 𝓑𝓸𝓽 ❤️](https://t.me/Fun_Games_Chat):**
 **MainBot:** `{bot_state}`
 **UserBot:** `{ubot_state}`
 **Python:** `{pyver.split()[0]}`
 **Pyrogram:** `{pyrover}`
 **MongoDB:** `{mongover}`
 **Platform:** `{sys.platform}`
-**Profiles:** [BOT](t.me/{BOT_USERNAME}) | [UBOT](t.me/RymOfficial)
+**Profiles:** [BOT](t.me/{BOT_USERNAME}) | [UBOT](t.me/Fun_Games_Chat_Channel)
 """
     answers.append(
         InlineQueryResultArticle(
